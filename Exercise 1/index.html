@@ -10,15 +10,15 @@
 
 <body>
     <div id="orderApp">
-        <h1>Customer Food Order</h1>
-        <h4> Directions: Input name of food item (followed by a colon) and its quantity. 
+        <h1 id="title">Burgers, Shakes, and Fries</h1>
+        <p id="directions">Directions: To place a customer order, input name of food item (followed by a colon) and its quantity. 
         <br>
-        * If ordering various types of food items, place comma after each food item/quantity pair.
-        </h4>
-        <input id="userInput" type="text" placeholder="Ex. hamburgers: 3, shakes: 2, french fries: 1">
+        * If ordering different food items at the same time, place comma after food item/quantity pair.
+        </p>
+        <input id="userInput" type="text" placeholder="Ex. burgers: 3, shakes: 2, fries: 1">
         <br>
         <br>
-        <button id="orderButton" type="button">Submit Order</button>
+        <button id="orderButton" type="button">Place Order</button>
         <p id="output"></p>
     </div>
     <script src="main.js"></script>

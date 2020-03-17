@@ -1,7 +1,10 @@
 var menu = {
-    "hamburger": 100,
-    "french fries": 100,
-    "shakes": 100
+    "burgers": 100,
+    "shakes": 100,
+    "fries": 100
+    // "boneless buffalo wings": 300,
+    // "veggie burger": 100,
+    // "sweet potato fries": 200
 }
    
 // attach an event listener to the order button and listen for the click event
