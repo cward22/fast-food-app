@@ -32,7 +32,7 @@ body {
     text-align: center;
 }
 
-#orderButton {
+#orderButton, #inventoryButton {
     border-radius: 15px;
     /* border: none; */
     cursor: pointer;
