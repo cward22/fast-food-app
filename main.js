@@ -19,5 +19,10 @@ document.getElementById("orderButton").addEventListener("click", function() {
 
 // clear input field after each order submission
 document.getElementById("orderButton").addEventListener("click", function() {
-    document.getElementById("userInput").value = '';
+    document.getElementById("userInput").value = "";
 });
+
+document.getElementById("userInput").addEventListener("click", function() {
+    document.getElementById("output").innerHTML = "";
+});
+
