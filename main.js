@@ -22,6 +22,7 @@ document.getElementById("orderButton").addEventListener("click", function() {
     document.getElementById("userInput").value = "";
 });
 
+// clear output message when next customer clicks inside input field
 document.getElementById("userInput").addEventListener("click", function() {
     document.getElementById("output").innerHTML = "";
 });
