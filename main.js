@@ -9,31 +9,32 @@ var menu = {
     // "sweet potato fries": 200
 }
 
-// take the customer's order and save it to a variable named customerOrder
-
-// attach an event listener to the order button and listen for the click event
+// Attach an event listener to the order button and listen for the click event.
 document.getElementById("orderButton").addEventListener("click", function() {
-    // take the customer's order and save it to a variable named customerOrder
+    // Take the customer's order and save it to a variable named customerOrder.
     var customerOrder = document.getElementById("userInput").value;
-    // make a string with the customer's order and repeat order back to customer
+    // Make a string with the customer's order and repeat order back to customer.
     document.getElementById("output").innerHTML = `Your order -  ${customerOrder} - is being prepared!`;
-     // log the customer's order to the console
+     // Log the customer's order to the console.
     console.log(customerOrder);
 })
 
-// clear input field after each order submission
+// Clear input field after each order submission.
 document.getElementById("orderButton").addEventListener("click", function() {
     document.getElementById("userInput").value = "";
 });
 
-// clear output message when next customer clicks inside input field
+// Clear output message when next customer clicks inside input field.
 document.getElementById("userInput").addEventListener("click", function() {
     document.getElementById("output").innerHTML = "";
 });
 
-// Take the customerOrder variable, (which should be a string) and split it on the comma character. 
+// Take the customerOrder variable, (which should be a string) and split it on the comma character.
+var customerOrder = "   burgers: 3, fries: 2, shakes: 4   ";
+var order = customerOrder.split(",").map(function(item) {
+// Trim extra white space after comma.
+    console.log (item.trim());
+});
 
-// var customerOrder = document.getElementById("userInput").value;
-// customerOrder.split(",");
 
-
+// Loop through the entire order array (from 0 to the length of the array)
