@@ -31,15 +31,13 @@ document.getElementById("userInput").addEventListener("click", function() {
 
 // Take the customerOrder variable, (which should be a string) and split it on the comma character and trim white space after each comma.
 
-var customerOrder = "   burgers: 3, fries: 2, shakes: 4   ";
+// let customerOrder = document.getElementById("userInput").value;
 
-// var order = customerOrder.split(",").map(function(item) {
-var order = customerOrder.split(",").map(item =>
+let customerOrder = "   burgers: 3, fries: 2, shakes: 4   ";
+
+let order = customerOrder.split(",").map(item =>
     item.trim());
-// var order = customerOrder.trim().split(",");
-// console.log (item.trim());
     console.log(order);
-// });
 
 // Loop through the entire order array (from 0 to the length of the array). In the loop split each item of this array on the colon character. Trim the leading and trailing whitespace again.
 
@@ -47,4 +45,4 @@ for (var i = 0; i < order.length; i++) {
     order[i] = order[i].split(":").map(item => 
         item.trim());
         console.log(order[i]);
-}
+    }

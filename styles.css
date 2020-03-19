@@ -1,17 +1,17 @@
-body {
+/* body {
     background-image: url(images/fastfood.jpg);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
+} */
 
 #orderApp {
     color: rgb(44, 43, 43);
     text-align: center;
     /* background-color: rgb(240, 228, 64); */
-    background-color: rgb(233, 230, 53);
+    /* background-color: rgb(233, 230, 53); */
     margin: -20px;
     height: 20%;
     padding: 2px;
