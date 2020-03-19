@@ -1,5 +1,4 @@
 // Create an object named menu where we'll save the menu for the restaurant. For each property (Each property should be a string like "fries") and add a number as the value.
-
 var menu = {
     "burgers": 100,
     "shakes": 150,
@@ -30,7 +29,6 @@ document.getElementById("userInput").addEventListener("click", function() {
 });
 
 // Take the customerOrder variable, (which should be a string) and split it on the comma character and trim white space after each comma.
-
 // let customerOrder = document.getElementById("userInput").value;
 
 let customerOrder = "   burgers: 3, fries: 2, shakes: 4   ";
