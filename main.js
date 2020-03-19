@@ -29,12 +29,14 @@ document.getElementById("userInput").addEventListener("click", function() {
     document.getElementById("output").innerHTML = "";
 });
 
-// Take the customerOrder variable, (which should be a string) and split it on the comma character.
+// Take the customerOrder variable, (which should be a string) and split it on the comma character and trim white space after each comma.
 var customerOrder = "   burgers: 3, fries: 2, shakes: 4   ";
-var order = customerOrder.split(",").map(function(item) {
-// Trim extra white space after comma.
-    console.log (item.trim());
-});
-
+// var order = customerOrder.split(",").map(function(item) {
+var order = customerOrder.split(",").map(item =>
+    item.trim());
+// var order = customerOrder.trim().split(",");
+// console.log (item.trim());
+    console.log(order);
+// });
 
 // Loop through the entire order array (from 0 to the length of the array)
